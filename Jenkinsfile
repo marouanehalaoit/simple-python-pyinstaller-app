@@ -29,7 +29,7 @@ pipeline {
          stage('Deliver') {
             agent {
                 docker {
-                    image 'six8/pyinstaller-alpine:alpine-3.6-pyinstaller-v3.4'
+                    image 'cdrx/pyinstaller-linux:python2'
                 }
             }
             steps {
